@@ -6,8 +6,7 @@ Hello ,
 
 the code is not rest api based but you may consider dbconnect.py file (which connects to the DataBase) is an API.
 
-before running the app.py file you will need to create a database and configure dbconnect.py file for connection
-# explaination inside the dbconnect.py file
+before running the app.py file you will need to create a database and configure dbconnect.py file for connection (explaination inside the dbconnect.py file)
 
 ### before proceding further you may execute queries which are  stored in sqls.txt file.
 
