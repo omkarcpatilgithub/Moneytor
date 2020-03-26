@@ -2,10 +2,13 @@ import mysql.connector
 from datetime import date, timedelta,datetime
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  passwd="",
-  database='moneytor'
+  host="localhost", # name of host on which your database is stored
+  user="root",	# username for the database
+  passwd="",	# password for the database
+  database='moneytor'	#name of data base
+
+### before proceding further you may execute queries which are  stored in sqls.txt file.
+
 
 )
 
