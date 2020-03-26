@@ -1,0 +1,34 @@
+
+CREATE TABLE hotel. 
+( `id` INT NOT NULL AUTO_INCREMENT ,
+ `roomid` INT NOT NULL ,
+ `book_date` DATE NOT NULL ,
+ `booked` BOOLEAN NOT NULL DEFAULT FALSE ,
+ `name` VARCHAR(20) NULL ,
+ PRIMARY KEY (`id`)) ;
+
+
+
+INSERT INTO `hotel` (`id`, `roomid`, `book_date`, `booked`, `name`)
+ VALUES 
+(NULL, '101', '2020-03-22', '0', NULL), 
+(NULL, '102', '2020-03-22', '0', NULL),
+(NULL, '103', '2020-03-22', '0', NULL), 
+(NULL, '104', '2020-03-22', '0', NULL), 
+(NULL, '105', '2020-03-22', '0', NULL), 
+(NULL, '106', '2020-03-22', '0', NULL), 
+(NULL, '107', '2020-03-22', '0', NULL), 
+(NULL, '108', '2020-03-22', '0', NULL), 
+(NULL, '109', '2020-03-22', '0', NULL), 
+(NULL, '110', '2020-03-22', '0', NULL),
+(NULL, '101', '2020-03-23', '0', NULL), 
+(NULL, '102', '2020-03-23', '0', NULL),
+(NULL, '103', '2020-03-23', '0', NULL), 
+(NULL, '104', '2020-03-23', '0', NULL), 
+(NULL, '105', '2020-03-23', '0', NULL), 
+(NULL, '106', '2020-03-23', '0', NULL), 
+(NULL, '107', '2020-03-23', '0', NULL), 
+(NULL, '108', '2020-03-23', '0', NULL), 
+(NULL, '109', '2020-03-23', '0', NULL), 
+(NULL, '110', '2020-03-23', '0', NULL)
+
