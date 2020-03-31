@@ -1,22 +1,24 @@
 # Moneytor
 Hotel management for Moneytor hotel
+a REST API is created with Django framework,
 
+model is creted for following fields ['room','book_date','booked','name'] (models.py)
 
-Hello ,
+model is serialized with ModelSerializer (in serializers.py)
 
-the code is not rest api based but you may consider dbconnect.py file (which connects to the DataBase) is an API.
+follwing urls implemented: (urls.py)
 
-before running the app.py file you will need to create a database and configure dbconnect.py file for connection (explaination inside the dbconnect.py file)
+-path('rooms/', article_list), : to get all the entries of rooms OR post a new entry (in json format)
 
-### before proceding further you may execute queries which are  stored in sqls.txt file.
+-path('detail/int:pk', article_detail), : to get/put/delete single entry with its id (pk)
 
-as the code is only backend and works with command prompt, you can run CMD on the directory where app.py and run the file with "python app.py"
+-path('allbooked',raw_input), : to get only booked rooms with their dates
 
-- in the directory you will notice app.py only calling the funtions, real processing is at dbconnect.py
+-path('clear_dup',clear_duplicates), : to clear duplicates wichever created ( this function fires a row sql query)
 
+-path('after_dup_remove',after_duplicate_remove) : to get all entries available after clearing duplicates
 
-for functionality mentioned
-1. He wants to check for availability of rooms between certain dates.       # 3rd option 
-2. He wants to book a room for a certain customer for certain time period if it is available.	# 4th option
+according functions are written in views.py
 
-
+#######################################################################
+form are added to take input from user
