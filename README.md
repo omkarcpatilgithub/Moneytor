@@ -40,10 +40,15 @@ Gui is also added for simplicity
 #######################################################################
 To implement
 => download or clone this repository in your system.
+
 => goto to the folder
+
 => open terminal
+
 => python manage.py makemigrations
+
 => python manage.py migrate
+
 => python manage.py runserver
 
 Note: please first call /initialSetup then all others
