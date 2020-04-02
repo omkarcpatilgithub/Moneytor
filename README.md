@@ -9,7 +9,7 @@ a REST API is created with Django framework,
 
 --follwing urls implemented: (urls.py)
 
-	localhost <ip>  /initialSetup :	Please run this Initial setup before going further
+  localhost <ip>  /initialSetup :	Please run this Initial setup before going further
 	
   localhost <ip>  /hotel	:	for single room booking
   
