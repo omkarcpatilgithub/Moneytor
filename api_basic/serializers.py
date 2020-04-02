@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from .models import Article
-
 # class ArticleSerializer(serializers.Serializer):
 #     title = serializers.CharField(max_length=100)
 #     author = serializers.CharField(max_length=100)
@@ -21,6 +20,11 @@ from .models import Article
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ['id','room','book_date','booked','name']
+        fields = ['room','book_date','booked','name']
         # fields = ['id','title','author']
+
+class RoomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Article
+        fields = ['room']
 

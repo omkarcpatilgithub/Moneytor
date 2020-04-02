@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api_basic',
     'crispy_forms',
+    'reset_migrations',
 ]
 
 MIDDLEWARE = [

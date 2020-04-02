@@ -6,7 +6,7 @@ class Article(models.Model):
 
     room = models.IntegerField(default=101)
     book_date = models.DateField()
-    booked = models.IntegerField(default=0)
+    booked = models.IntegerField(default=1)
     name = models.CharField(max_length=20,default='Nobody')
     #
     # title = models.CharField(max_length=100,default='the secret')
@@ -16,5 +16,5 @@ class Article(models.Model):
 
 
     def __str__(self):
-        return self.room,self.book_date,self.booked
+        return self.name
         # return self.title
