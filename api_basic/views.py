@@ -242,9 +242,7 @@ def initial_setup(request):
         query = a.initial_insert
         with connection.cursor() as cursor:
             cursor.execute(query)
-            row = cursor.fetchone()
-
-        return Response(row)
+        return Response('You are good to go ahead, please go on other links')
 
 
 ## Cacelling one entry with room and date
