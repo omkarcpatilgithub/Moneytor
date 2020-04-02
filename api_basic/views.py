@@ -230,9 +230,11 @@ def multi_booking(request):
 
 
 ## to delete all entries on database simply call this function from any function
-# def delete_everything():
-#     Article.objects.all().delete()
-#     print('everything is deleted')
+@api_view(['GET'])
+def delete_everything(request):
+    Article.objects.all().delete()
+    print('everything is deleted')
+    return Response('All wiped out')
 
 
 @api_view(['GET'])

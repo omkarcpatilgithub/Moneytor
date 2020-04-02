@@ -7,7 +7,7 @@ urlpatterns = [
     #path('detail/<int:pk>', views.article_detail),
     #path('clear_dup',views.clear_duplicates),
     # path('after_dup_remove',views.after_duplicate_remove),
-
+    path('deleteall', views.delete_everything),
     path('hotel', views.Hotel_detail),
     path('allBooked', views.raw_input),
     path('roomsAvailable', views.check_availability),
