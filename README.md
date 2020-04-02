@@ -2,7 +2,7 @@
 Hotel management for Moneytor hotel
 a REST API is created with Django framework,
 
-model is creted for following fields ['room','book_date','booked','name'] (models.py)
+--model is creted for following fields ['room','book_date','booked','name'] (models.py)
 
 model is serialized with ModelSerializer (in serializers.py)
 
